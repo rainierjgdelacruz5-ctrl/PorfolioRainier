@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav-wrap">
+    <nav class="nav">
+      <span class="nav-name">My Portfolio</span>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Hello Everyone</h1>
+        <p class="hero-sub">Online Portfolio for BS Computer Science</p>
+        <a href="#projects" class="btn">View My Projects</a>
+      </div>
+      <div class="hero-photo">
+        <img src="images/profile.jpg" alt="Profile picture" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
+        <span class="fallback-label">images/profile.jpg</span>
+      </div>
+    </section>
+
+    <section id="about" class="section section-narrow">
+      <h2>About Me</h2>
+      <p>I am a Computer Science student who enjoys building websites using HTML, CSS and JavaScript. I am continuously improving my web development skills and learning new technologies.</p>
+    </section>
+
+    <section id="skills" class="section section-soft">
+      <h2>My Skills</h2>
+      <ul class="skills-list">
+        <li><span class="skill-icon" aria-hidden="true">&lt;/&gt;</span>HTML</li>
+        <li><span class="skill-icon" aria-hidden="true">#</span>CSS</li>
+        <li><span class="skill-icon" aria-hidden="true">{ }</span>JavaScript</li>
+        <li><span class="skill-icon" aria-hidden="true">⑂</span>Git</li>
+        <li><span class="skill-icon" aria-hidden="true">◎</span>GitHub</li>
+        <li><span class="skill-icon" aria-hidden="true">▲</span>Vercel</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>My Activities</h2>
+      <div class="activity-grid">
+
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/act1.png" alt="Laboratory Activity 1 preview" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
+            <span class="fallback-label">images/act1.png</span>
+          </div>
+          <div class="activity-body">
+            <h3>Laboratory Activity 1</h3>
+            <p>Purely HTML code.</p>
+          </div>
+        </article>
+
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/act2.png" alt="Laboratory Activity 2 preview" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
+            <span class="fallback-label">images/act2.png</span>
+          </div>
+          <div class="activity-body">
+            <h3>Laboratory Activity 2</h3>
+            <p>Website with forms and tables created using HTML and CSS.</p>
+          </div>
+        </article>
+
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/act3.png" alt="Laboratory Activity 3 preview" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
+            <span class="fallback-label">images/act3.png</span>
+          </div>
+          <div class="activity-body">
+            <h3>Laboratory Activity 3</h3>
+            <p>Introduction to transitions and external CSS.</p>
+          </div>
+        </article>
+
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/act4.png" alt="Laboratory Activity 4 preview" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
+            <span class="fallback-label">images/act4.png</span>
+          </div>
+          <div class="activity-body">
+            <h3>Laboratory Activity 4</h3>
+            <p>Simple responsive landing page.</p>
+          </div>
+        </article>
+
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/act5.png" alt="Laboratory Activity 5 preview" onerror="this.parentElement.classList.add('img-fallback'); this.remove();">
+            <span class="fallback-label">images/act5.png</span>
+          </div>
+          <div class="activity-body">
+            <h3>Laboratory Activity 5</h3>
+            <p>Simple responsive landing page.</p>
+            <a href="Activity1/index.html" class="link">Check &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section section-soft">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:studentinfo@pdm.com">studentinfo@pdm.com</a></p>
+      <p>Phone: 0912-345-6789</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> PDM Student &middot; Student Portfolio</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
